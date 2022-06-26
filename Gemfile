@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.5.1'
 
-gem 'rails', '~> 4.2'
+gem 'rails', '~> 4.2', '>= 4.2.9'
 
 gem 'mysql2', '~> 0.3.18'
 gem 'unicorn'
@@ -18,10 +18,10 @@ gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'font-awesome-sass-rails'
 gem 'newrelic_rpm'
 gem 'sentry-raven'
-gem 'responders', '~> 2.0'
+gem 'responders', '~> 2.4', '>= 2.4.0'
 gem 'nokogiri', '1.8.2'
 gem 'loofah', '2.2.2'
-gem 'rails-html-sanitizer', '1.0.4'
+gem 'rails-html-sanitizer', '1.4.3'
 
 group :development, :production do
   gem 'rails_12factor'
@@ -29,7 +29,7 @@ end
 
 group :test, :development do
   gem 'minitest'
-  gem 'rspec-rails', '~> 3.1'
+  gem 'rspec-rails', '~> 3.6', '>= 3.6.1'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'factory_girl_rails'
   gem 'faker'

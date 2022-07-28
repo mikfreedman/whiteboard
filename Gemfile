@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.5.1'
 
-gem 'rails', '~> 4.2'
+gem 'rails', '~> 5.2', '>= 5.2.8.1'
 
 gem 'mysql2', '~> 0.3.18'
 gem 'unicorn'

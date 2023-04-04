@@ -2,26 +2,26 @@ source 'https://rubygems.org'
 
 ruby '2.5.1'
 
-gem 'rails', '~> 4.2'
+gem 'rails', '~> 6.1', '>= 6.1.7.3'
 
 gem 'mysql2', '~> 0.3.18'
 gem 'unicorn'
-gem 'jquery-rails'
-gem 'omniauth-saml'
+gem 'jquery-rails', '>= 4.4.0'
+gem 'omniauth-saml', '>= 2.0.0'
 gem 'github-markdown', require: 'github/markdown'
 gem 'protected_attributes'
-gem 'sass-rails'
+gem 'sass-rails', '>= 6.0.0'
 gem 'compass-rails'
 gem 'coffee-rails'
 gem 'uglifier'
-gem 'bootstrap-sass', '~> 3.3.5.1'
+gem 'bootstrap-sass', '~> 3.4.0.0'
 gem 'font-awesome-sass-rails'
 gem 'newrelic_rpm'
 gem 'sentry-raven'
-gem 'responders', '~> 2.0'
-gem 'nokogiri', '1.8.2'
-gem 'loofah', '2.2.2'
-gem 'rails-html-sanitizer', '1.0.4'
+gem 'responders', '~> 3.0', '>= 3.0.0'
+gem 'nokogiri', '1.13.9'
+gem 'loofah', '2.19.1'
+gem 'rails-html-sanitizer', '1.4.4'
 
 group :development, :production do
   gem 'rails_12factor'
@@ -29,8 +29,8 @@ end
 
 group :test, :development do
   gem 'minitest'
-  gem 'rspec-rails', '~> 3.1'
-  gem 'shoulda-matchers', '~> 3.1'
+  gem 'rspec-rails', '~> 3.6', '>= 3.6.1'
+  gem 'shoulda-matchers', '~> 3.1', '>= 3.1.2'
   gem 'factory_girl_rails'
   gem 'faker'
   gem 'capybara'
@@ -41,7 +41,7 @@ group :test, :development do
   gem 'timecop'
   gem 'foreman'
   gem 'fakefs', :require => 'fakefs/safe'
-  gem 'dotenv-rails'
+  gem 'dotenv-rails', '>= 2.7.6'
   gem 'pry-rails'
   gem 'byebug'
 end
@@ -53,6 +53,6 @@ end
 
 group :development do
   gem 'auto_tagger'
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.8.0'
   gem 'binding_of_caller'
 end

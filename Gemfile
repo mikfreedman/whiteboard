@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.5.1'
 
-gem 'rails', '~> 4.2'
+gem 'rails', '~> 7.0', '>= 7.0.0'
 
 gem 'mysql2', '~> 0.3.18'
 gem 'unicorn'
@@ -10,7 +10,7 @@ gem 'jquery-rails'
 gem 'omniauth-saml'
 gem 'github-markdown', require: 'github/markdown'
 gem 'protected_attributes'
-gem 'sass-rails'
+gem 'sass-rails', '>= 6.0.0'
 gem 'compass-rails'
 gem 'coffee-rails'
 gem 'uglifier'
